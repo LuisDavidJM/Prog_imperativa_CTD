@@ -29,3 +29,23 @@ function ordenarDes(array){
 
 console.log(ordenarAsc(edades));
 console.log(ordenarDes(edades));
+
+//Ejercicio 2
+const letras = ["C", "A", "D", "E", "H", "Z", "J", "L"];
+
+function ordenarAlfabeticamente(array){
+    for(let i = 0; i < array.length; i++){
+        for (let j = 0; j < array.length - 1; j++){
+            if (array[j] > array[j+1]){
+                let num = array[j];
+                array[j] = array[j+1];
+                array[j+1] = num;
+            } 
+        }
+    }
+    return array
+}
+
+console.log(ordenarAlfabeticamente(letras));
+
+//Ejercicio 3
